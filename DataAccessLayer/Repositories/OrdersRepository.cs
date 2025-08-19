@@ -151,8 +151,84 @@ public class OrdersRepository : IOrdersRepository
             .FirstOrDefaultAsync(condition);
     }
 
+    //public async Task<Order?> UpdateOrder(Order order)
+    //{
+    //    var existingOrder = await _dbContext.Orders
+    //        .Include(o => o.OrderItems)
+    //        .FirstOrDefaultAsync(o => o.OrderID == order.OrderID);
+
+    //    if (existingOrder == null)
+    //        return null;
+
+    //    // Update order fields
+    //    existingOrder.OrderDate = order.OrderDate;
+    //    existingOrder.TotalBill = order.TotalBill;
+
+    //    // Replace order items
+    //    _dbContext.OrderItems.RemoveRange(existingOrder.OrderItems);
+    //    foreach (var item in order.OrderItems)
+    //    {
+    //        item.OrderItemID = Guid.NewGuid(); // New ID
+    //        item.OrderID = order.OrderID;
+    //    }
+
+    //    existingOrder.OrderItems = order.OrderItems;
+
+    //    await _dbContext.SaveChangesAsync();
+    //    return existingOrder;
+    //}
+
+    //public async Task<Order?> UpdateOrder(Order order)
+    //{
+    //    var existingOrder = await _dbContext.Orders
+    //        .Include(o => o.OrderItems)
+    //        .FirstOrDefaultAsync(o => o.OrderID == order.OrderID);
+
+    //    if (existingOrder == null)
+    //        return null;
+
+    //    // Update order fields
+    //    existingOrder.OrderDate = order.OrderDate;
+    //    existingOrder.TotalBill = order.TotalBill;
+
+    //    // Step 1: Delete removed items
+    //    foreach (var existingItem in existingOrder.OrderItems.ToList())
+    //    {
+    //        if (!order.OrderItems.Any(i => i.OrderItemID == existingItem.OrderItemID))
+    //        {
+    //            _dbContext.OrderItems.Remove(existingItem);
+    //        }
+    //    }
+
+    //    // Step 2: Add/update items
+    //    foreach (var item in order.OrderItems)
+    //    {
+    //        var existingItem = existingOrder.OrderItems
+    //            .FirstOrDefault(i => i.OrderItemID == item.OrderItemID);
+
+    //        if (existingItem != null)
+    //        {
+    //            // Update existing item
+    //            existingItem.ProductID = item.ProductID;
+    //            existingItem.Quantity = item.Quantity;
+    //            existingItem.UnitPrice = item.UnitPrice;
+    //            existingItem.TotalPrice = item.TotalPrice;
+    //        }
+    //        else
+    //        {
+    //            // Add new item
+    //            item.OrderItemID = Guid.NewGuid();
+    //            item.OrderID = order.OrderID;
+    //            existingOrder.OrderItems.Add(item);
+    //        }
+    //    }
+
+    //    await _dbContext.SaveChangesAsync();
+    //    return existingOrder;
+    //}
     public async Task<Order?> UpdateOrder(Order order)
     {
+        // Step 0: Load the existing order including its items
         var existingOrder = await _dbContext.Orders
             .Include(o => o.OrderItems)
             .FirstOrDefaultAsync(o => o.OrderID == order.OrderID);
@@ -160,21 +236,54 @@ public class OrdersRepository : IOrdersRepository
         if (existingOrder == null)
             return null;
 
-        // Update order fields
+        // Step 1: Update top-level order fields
         existingOrder.OrderDate = order.OrderDate;
         existingOrder.TotalBill = order.TotalBill;
 
-        // Replace order items
-        _dbContext.OrderItems.RemoveRange(existingOrder.OrderItems);
-        foreach (var item in order.OrderItems)
+        // Step 2: Remove order items that were deleted by the user
+        foreach (var existingItem in existingOrder.OrderItems.ToList()) // ToList avoids modifying during iteration
         {
-            item.OrderItemID = Guid.NewGuid(); // New ID
-            item.OrderID = order.OrderID;
+            bool isStillPresent = order.OrderItems.Any(i => i.OrderItemID == existingItem.OrderItemID);
+            if (!isStillPresent)
+            {
+                _dbContext.OrderItems.Remove(existingItem);
+            }
         }
 
-        existingOrder.OrderItems = order.OrderItems;
+        // Step 3: Add new items or update existing ones
+        foreach (var incomingItem in order.OrderItems)
+        {
+            var matchingExistingItem = existingOrder.OrderItems
+                .FirstOrDefault(i => i.OrderItemID == incomingItem.OrderItemID);
 
+            if (matchingExistingItem != null)
+            {
+                // Update existing item
+                matchingExistingItem.ProductID = incomingItem.ProductID;
+                matchingExistingItem.Quantity = incomingItem.Quantity;
+                matchingExistingItem.UnitPrice = incomingItem.UnitPrice;
+                matchingExistingItem.TotalPrice = incomingItem.TotalPrice;
+            }
+            else
+            {
+                // Add new item — generate new ID and set foreign key
+                if (incomingItem.OrderItemID == Guid.Empty)
+                {
+                    incomingItem.OrderItemID = Guid.NewGuid();
+                }
+
+                incomingItem.OrderID = existingOrder.OrderID;
+                existingOrder.OrderItems.Add(incomingItem);
+                incomingItem.OrderID = existingOrder.OrderID;
+
+                existingOrder.OrderItems.Add(incomingItem);
+            }
+        }
+
+        // Step 4: Save changes
         await _dbContext.SaveChangesAsync();
+
+        // Step 5: Return the updated order
         return existingOrder;
     }
 }

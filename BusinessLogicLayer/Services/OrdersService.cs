@@ -192,6 +192,7 @@
 //}
 
 using AutoMapper;
+using BusinessLogicLayer.Mappers;
 using eCommerce.OrdersMicroservice.BusinessLogicLayer.DTO;
 using eCommerce.OrdersMicroservice.BusinessLogicLayer.ServiceContracts;
 using eCommerce.OrdersMicroservice.DataAccessLayer.Entities;
@@ -265,42 +266,104 @@ public class OrdersService : IOrdersService
         return _mapper.Map<OrderResponse>(addedOrder);
     }
 
+    //public async Task<OrderResponse?> UpdateOrder(OrderUpdateRequest orderUpdateRequest)
+    //{
+    //    if (orderUpdateRequest == null) throw new ArgumentNullException(nameof(orderUpdateRequest));
+
+    //    ValidationResult validationResult = await _orderUpdateRequestValidator.ValidateAsync(orderUpdateRequest);
+    //    if (!validationResult.IsValid)
+    //    {
+    //        var errors = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));
+    //        throw new ArgumentException(errors);
+    //    }
+
+    //    foreach (var orderItemUpdateRequest in orderUpdateRequest.OrderItems)
+    //    {
+    //        var itemValidationResult = await _orderItemUpdateRequestValidator.ValidateAsync(orderItemUpdateRequest);
+    //        if (!itemValidationResult.IsValid)
+    //        {
+    //            var errors = string.Join(", ", itemValidationResult.Errors.Select(e => e.ErrorMessage));
+    //            throw new ArgumentException(errors);
+    //        }
+    //    }
+
+    //    // TODO: Check if UserID exists in Users microservice
+
+    //    var orderInput = _mapper.Map<Order>(orderUpdateRequest);
+
+    //    foreach (var orderItem in orderInput.OrderItems)
+    //    {
+    //        orderItem.TotalPrice = orderItem.Quantity * orderItem.UnitPrice;
+    //    }
+    //    orderInput.TotalBill = orderInput.OrderItems.Sum(i => i.TotalPrice);
+
+    //    var updatedOrder = await _ordersRepository.UpdateOrder(orderInput);
+    //    if (updatedOrder == null) return null;
+
+    //    return _mapper.Map<OrderResponse>(updatedOrder);
+    //}
+
     public async Task<OrderResponse?> UpdateOrder(OrderUpdateRequest orderUpdateRequest)
     {
-        if (orderUpdateRequest == null) throw new ArgumentNullException(nameof(orderUpdateRequest));
-
-        ValidationResult validationResult = await _orderUpdateRequestValidator.ValidateAsync(orderUpdateRequest);
-        if (!validationResult.IsValid)
+        // Check for null parameter
+        if (orderUpdateRequest == null)
         {
-            var errors = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));
+            throw new ArgumentNullException(nameof(orderUpdateRequest));
+        }
+
+        // Validate OrderUpdateRequest using FluentValidation
+        ValidationResult orderUpdateRequestValidationResult = await _orderUpdateRequestValidator.ValidateAsync(orderUpdateRequest);
+        if (!orderUpdateRequestValidationResult.IsValid)
+        {
+            string errors = string.Join(", ", orderUpdateRequestValidationResult.Errors.Select(error => error.ErrorMessage));
             throw new ArgumentException(errors);
         }
 
-        foreach (var orderItemUpdateRequest in orderUpdateRequest.OrderItems)
+        // Validate each OrderItemUpdateRequest using FluentValidation
+        foreach (OrderItemUpdateRequest orderItemUpdateRequest in orderUpdateRequest.OrderItems)
         {
-            var itemValidationResult = await _orderItemUpdateRequestValidator.ValidateAsync(orderItemUpdateRequest);
-            if (!itemValidationResult.IsValid)
+            ValidationResult orderItemUpdateRequestValidationResult = await _orderItemUpdateRequestValidator.ValidateAsync(orderItemUpdateRequest);
+
+            if (!orderItemUpdateRequestValidationResult.IsValid)
             {
-                var errors = string.Join(", ", itemValidationResult.Errors.Select(e => e.ErrorMessage));
+                string errors = string.Join(", ", orderItemUpdateRequestValidationResult.Errors.Select(error => error.ErrorMessage));
                 throw new ArgumentException(errors);
             }
         }
 
-        // TODO: Check if UserID exists in Users microservice
+        // TODO: Add logic for checking if UserID exists in Users microservice
 
-        var orderInput = _mapper.Map<Order>(orderUpdateRequest);
+        // Convert data from OrderUpdateRequest to Order (DTO to Domain Model)
+        Order orderInput = _mapper.Map<Order>(orderUpdateRequest); // Uses OrderUpdateRequestToOrder mapping profile
 
-        foreach (var orderItem in orderInput.OrderItems)
+
+        //Order orderInput = OrderMapper.MapToOrder(orderUpdateRequest);
+
+        // Generate values for each order item
+        foreach (OrderItem orderItem in orderInput.OrderItems)
         {
             orderItem.TotalPrice = orderItem.Quantity * orderItem.UnitPrice;
         }
-        orderInput.TotalBill = orderInput.OrderItems.Sum(i => i.TotalPrice);
 
-        var updatedOrder = await _ordersRepository.UpdateOrder(orderInput);
-        if (updatedOrder == null) return null;
+        // Calculate total bill
+        orderInput.TotalBill = orderInput.OrderItems.Sum(orderItem => orderItem.TotalPrice);
 
-        return _mapper.Map<OrderResponse>(updatedOrder);
+        // Invoke repository to update the order
+        Order? updatedOrder = await _ordersRepository.UpdateOrder(orderInput);
+
+        // If no order was updated, return null
+        if (updatedOrder == null)
+        {
+            return null;
+        }
+
+        // Map updated Order entity to OrderResponse DTO
+        OrderResponse updatedOrderResponse = _mapper.Map<OrderResponse>(updatedOrder);
+
+        // Return the response
+        return updatedOrderResponse;
     }
+
 
     public async Task<bool> DeleteOrder(Guid orderID)
     {

@@ -119,7 +119,13 @@ public class OrdersController : ControllerBase
   [HttpPut("{orderID}")]
   public async Task<IActionResult> Put(Guid orderID, OrderUpdateRequest orderUpdateRequest)
   {
-    if (orderUpdateRequest == null)
+
+        foreach (var item in orderUpdateRequest.OrderItems)
+        {
+            Console.WriteLine($"OrderItemID: {item.OrderItemID}");
+        }
+
+        if (orderUpdateRequest == null)
     {
       return BadRequest("Invalid order data");
     }

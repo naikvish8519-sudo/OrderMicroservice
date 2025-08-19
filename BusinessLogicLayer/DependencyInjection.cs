@@ -16,9 +16,10 @@ public static class DependencyInjection
     //TO DO: Add business logic layer services into the IoC container
     services.AddValidatorsFromAssemblyContaining<OrderAddRequestValidator>();
 
-    services.AddAutoMapper(typeof(OrderAddRequestToOrderMappingProfile).Assembly);
+        //services.AddAutoMapper(typeof(OrderAddRequestToOrderMappingProfile).Assembly);
+        services.AddAutoMapper(typeof(DependencyInjection).Assembly);
 
-    services.AddScoped<IOrdersService, OrdersService>();
+        services.AddScoped<IOrdersService, OrdersService>();
     return services;
   }
 }
