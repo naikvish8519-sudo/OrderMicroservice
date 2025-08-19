@@ -1,24 +1,19 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eCommerce.OrdersMicroservice.DataAccessLayer.Entities;
 
 public class Order
 {
-  [BsonId]
-  [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-  public Guid _id {  get; set; }
+    [Key]
+    public Guid OrderID { get; set; }
 
-  [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-  public Guid OrderID { get; set; }
+    public Guid UserID { get; set; }
 
-  [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-  public Guid UserID { get; set; }
+    public DateTime OrderDate { get; set; }
 
-  [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-  public DateTime OrderDate { get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal TotalBill { get; set; }
 
-  [BsonRepresentation(MongoDB.Bson.BsonType.Double)]
-  public decimal TotalBill {  get; set; }
-
-  public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+    public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 }

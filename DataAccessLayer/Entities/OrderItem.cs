@@ -1,22 +1,25 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eCommerce.OrdersMicroservice.DataAccessLayer.Entities;
 
 public class OrderItem
 {
-  [BsonId]
-  [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-  public Guid _id {  get; set; }
+    [Key]
+    public Guid OrderItemID { get; set; }
 
-  [BsonRepresentation(MongoDB.Bson.BsonType.String)]
-  public Guid ProductID { get; set; }
+    public Guid OrderID { get; set; } // Foreign key
 
-  [BsonRepresentation(MongoDB.Bson.BsonType.Double)]
-  public decimal UnitPrice { get; set; }
+    [ForeignKey("OrderID")]
+    public Order? Order { get; set; }
 
-  [BsonRepresentation(MongoDB.Bson.BsonType.Int32)]
-  public int Quantity {  get; set; }
+    public Guid ProductID { get; set; }
 
-  [BsonRepresentation(MongoDB.Bson.BsonType.Double)]
-  public decimal TotalPrice {  get; set; }
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal UnitPrice { get; set; }
+
+    public int Quantity { get; set; }
+
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal TotalPrice { get; set; }
 }

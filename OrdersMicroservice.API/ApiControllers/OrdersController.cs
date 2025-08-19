@@ -3,6 +3,7 @@ using eCommerce.OrdersMicroservice.BusinessLogicLayer.ServiceContracts;
 using eCommerce.OrdersMicroservice.DataAccessLayer.Entities;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
+using System.Linq.Expressions;
 
 
 namespace OrdersMicroservice.API.ApiControllers;
@@ -29,43 +30,72 @@ public class OrdersController : ControllerBase
 
 
   //GET: /api/Orders/search/orderid/{orderID}
-  [HttpGet("search/orderid/{orderID}")]
-  public async Task<OrderResponse?> GetOrderByOrderID(Guid orderID)
-  {
-    FilterDefinition<Order> filter = Builders<Order>.Filter.Eq(temp => temp.OrderID, orderID);
+  //[HttpGet("search/orderid/{orderID}")]
+  //public async Task<OrderResponse?> GetOrderByOrderID(Guid orderID)
+  //{
+  //  FilterDefinition<Order> filter = Builders<Order>.Filter.Eq(temp => temp.OrderID, orderID);
 
-    OrderResponse? order = await _ordersService.GetOrderByCondition(filter);
-    return order;
-  }
+  //  OrderResponse? order = await _ordersService.GetOrderByCondition(filter);
+  //  return order;
+  //}
 
+    [HttpGet("search/orderid/{orderID}")]
+    public async Task<OrderResponse?> GetOrderByOrderID(Guid orderID)
+    {
+        // Use a LINQ expression to filter by orderID
+        Expression<Func<Order, bool>> filter = o => o.OrderID == orderID;
 
-  //GET: /api/Orders/search/productid/{productID}
-  [HttpGet("search/productid/{productID}")]
-  public async Task<IEnumerable<OrderResponse?>> GetOrdersByProductID(Guid productID)
-  {
-    FilterDefinition<Order> filter = Builders<Order>.Filter.ElemMatch(temp => temp.OrderItems, 
-      Builders<OrderItem>.Filter.Eq(tempProduct => tempProduct.ProductID, productID)
-      );
-
-    List<OrderResponse?> orders = await _ordersService.GetOrdersByCondition(filter);
-    return orders;
-  }
+        OrderResponse? order = await _ordersService.GetOrderByCondition(filter);
+        return order;
+    }
 
 
-  //GET: /api/Orders/search/orderDate/{orderDate}
-  [HttpGet("/search/orderDate/{orderDate}")]
-  public async Task<IEnumerable<OrderResponse?>> GetOrdersByOrderDate(DateTime orderDate)
-  {
-    FilterDefinition<Order> filter = Builders<Order>.Filter.Eq(temp => temp.OrderDate.ToString("yyyy-MM-dd"), orderDate.ToString("yyyy-MM-dd")
-      );
+    //GET: /api/Orders/search/productid/{productID}
+    //  [HttpGet("search/productid/{productID}")]
+    //public async Task<IEnumerable<OrderResponse?>> GetOrdersByProductID(Guid productID)
+    //{
+    //  FilterDefinition<Order> filter = Builders<Order>.Filter.ElemMatch(temp => temp.OrderItems, 
+    //    Builders<OrderItem>.Filter.Eq(tempProduct => tempProduct.ProductID, productID)
+    //    );
 
-    List<OrderResponse?> orders = await _ordersService.GetOrdersByCondition(filter);
-    return orders;
-  }
+    //  List<OrderResponse?> orders = await _ordersService.GetOrdersByCondition(filter);
+    //  return orders;
+    //}
+    [HttpGet("search/productid/{productID}")]
+    public async Task<IEnumerable<OrderResponse?>> GetOrdersByProductID(Guid productID)
+    {
+        // Expression to check if any OrderItem's ProductID matches the given productID
+        Expression<Func<Order, bool>> filter = o => o.OrderItems.Any(oi => oi.ProductID == productID);
+
+        List<OrderResponse?> orders = await _ordersService.GetOrdersByCondition(filter);
+        return orders;
+    }
 
 
-  //POST api/Orders
-  [HttpPost]
+
+    //GET: /api/Orders/search/orderDate/{orderDate}
+    //[HttpGet("/search/orderDate/{orderDate}")]
+    //public async Task<IEnumerable<OrderResponse?>> GetOrdersByOrderDate(DateTime orderDate)
+    //{
+    //  FilterDefinition<Order> filter = Builders<Order>.Filter.Eq(temp => temp.OrderDate.ToString("yyyy-MM-dd"), orderDate.ToString("yyyy-MM-dd")
+    //    );
+
+    //  List<OrderResponse?> orders = await _ordersService.GetOrdersByCondition(filter);
+    //  return orders;
+    //}
+    [HttpGet("/search/orderDate/{orderDate}")]
+    public async Task<IEnumerable<OrderResponse?>> GetOrdersByOrderDate(DateTime orderDate)
+    {
+        // Create a LINQ expression filter instead of MongoDB FilterDefinition
+        Expression<Func<Order, bool>> filter = o =>
+            o.OrderDate.Date == orderDate.Date; // Compare Date only, ignore time
+
+        List<OrderResponse?> orders = await _ordersService.GetOrdersByCondition(filter);
+        return orders;
+    }
+
+    //POST api/Orders
+    [HttpPost]
   public async Task<IActionResult> Post(OrderAddRequest orderAddRequest)
   {
     if (orderAddRequest == null)
