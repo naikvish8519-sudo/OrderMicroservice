@@ -1,0 +1,13 @@
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+E:\Dot-NET-Microservices-with-Azure-and-AKS\05. Orders Microservice\14. Testing Orders Endpoints\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
