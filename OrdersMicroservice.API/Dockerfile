@@ -19,9 +19,20 @@ FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./OrdersMicroservice.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
+#FROM base AS final
+#WORKDIR /app
+#COPY --from=publish /app/publish .
+#ENV MONGODB_HOST=localhost
+#ENV MONGODB_PORT=27017
+#ENTRYPOINT ["dotnet", "OrdersMicroservice.API.dll"]
+
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENV MONGODB_HOST=localhost
-ENV MONGODB_PORT=27017
+
+# ✅ Connection string for SQL Server running on your Windows host
+# Use SQL Authentication (cannot use Windows Auth from Linux container)
+ENV ConnectionStrings__SqlServer="Server=tcp:host.docker.internal,1433;Database=Microservices;User Id=dockeruser;Password=StrongPass123!;Encrypt=True;TrustServerCertificate=True;"
+
 ENTRYPOINT ["dotnet", "OrdersMicroservice.API.dll"]
+
