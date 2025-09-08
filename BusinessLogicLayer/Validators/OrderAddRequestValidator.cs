@@ -8,7 +8,7 @@ public class OrderAddRequestValidator : AbstractValidator<OrderAddRequest>
   public OrderAddRequestValidator()
   {
     //UserID
-    RuleFor(temp => temp.UserID)
+    RuleFor(temp => temp.UserId)
       .NotEmpty().WithErrorCode("User ID can't be blank");
 
     //OrderDate

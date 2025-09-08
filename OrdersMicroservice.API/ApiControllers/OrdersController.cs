@@ -4,7 +4,7 @@ using eCommerce.OrdersMicroservice.DataAccessLayer.Entities;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using System.Linq.Expressions;
-
+using BusinessLogicLayer.HttpClients;
 
 namespace OrdersMicroservice.API.ApiControllers;
 
@@ -13,11 +13,15 @@ namespace OrdersMicroservice.API.ApiControllers;
 public class OrdersController : ControllerBase
 {
   private readonly IOrdersService _ordersService;
+  private readonly UsersMicroserviceClient _usersClient;
 
-  public OrdersController(IOrdersService ordersService)
+
+
+    public OrdersController(IOrdersService ordersService, UsersMicroserviceClient usersClient)
   {
     _ordersService = ordersService;
-  }
+       _usersClient = usersClient;
+    }
 
 
   //GET: /api/Orders
@@ -96,27 +100,54 @@ public class OrdersController : ControllerBase
 
     //POST api/Orders
     [HttpPost]
-  public async Task<IActionResult> Post(OrderAddRequest orderAddRequest)
-  {
-    if (orderAddRequest == null)
+    public async Task<IActionResult> Post(OrderAddRequest orderAddRequest)
     {
-      return BadRequest("Invalid order data");
+        if (orderAddRequest is null)
+            return BadRequest("Invalid order data");
+
+        if (!ModelState.IsValid)
+            return ValidationProblem(ModelState);
+
+        if (orderAddRequest.UserId == Guid.Empty)
+            return BadRequest("UserId is required.");
+
+        // ✅ Validate user exists in Users microservice
+        var user = await _usersClient.GetUserByIdAsync(orderAddRequest.UserId);
+        if (user is null)
+            return NotFound($"User {orderAddRequest.UserId} not found.");
+
+        // (Optional) add more checks, e.g. is user active/verified if your DTO supports it
+        // if (user.IsActive == false) return Forbid("User is not active.");
+
+        // Proceed with order creation
+        var orderResponse = await _ordersService.AddOrder(orderAddRequest);
+        if (orderResponse is null)
+            return Problem("Error in adding order");
+
+        return Created($"api/Orders/search/orderid/{orderResponse.OrderID}", orderResponse);
     }
+    //  [HttpPost]
+    //public async Task<IActionResult> Post(OrderAddRequest orderAddRequest)
+    //{
+    //  if (orderAddRequest == null)
+    //  {
+    //    return BadRequest("Invalid order data");
+    //  }
 
-    OrderResponse? orderResponse = await _ordersService.AddOrder(orderAddRequest);
+    //  OrderResponse? orderResponse = await _ordersService.AddOrder(orderAddRequest);
 
-    if (orderResponse == null) 
-    {
-      return Problem("Error in adding order");
-    }
-
-
-    return Created($"api/Orders/search/orderid/{orderResponse?.OrderID}", orderResponse);
-  }
+    //  if (orderResponse == null) 
+    //  {
+    //    return Problem("Error in adding order");
+    //  }
 
 
-  //PUT api/Orders/{orderID}
-  [HttpPut("{orderID}")]
+    //  return Created($"api/Orders/search/orderid/{orderResponse?.OrderID}", orderResponse);
+    //}
+
+
+    //PUT api/Orders/{orderID}
+    [HttpPut("{orderID}")]
   public async Task<IActionResult> Put(Guid orderID, OrderUpdateRequest orderUpdateRequest)
   {
 

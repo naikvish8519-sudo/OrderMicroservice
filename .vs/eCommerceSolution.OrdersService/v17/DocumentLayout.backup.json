@@ -1,98 +1,114 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\OrderMicroservice\\",
+  "WorkspaceRootPath": "H:\\OrderMicroservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\mappers\\orderupdatemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderupdatemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|e:\\ordermicroservice\\ordersmicroservice.api\\apicontrollers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\apicontrollers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\apicontrollers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|e:\\ordermicroservice\\dataaccesslayer\\repositories\\ordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\ordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\dto\\orderitemupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\orderitemupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\mappers\\orderitemupdaterequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderitemupdaterequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\dto\\orderupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\orderupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|e:\\ordermicroservice\\dataaccesslayer\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\mappers\\orderitemtoorderitemresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderitemtoorderitemresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\dto\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|e:\\ordermicroservice\\dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|e:\\ordermicroservice\\dataaccesslayer\\repositorycontracts\\iordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositorycontracts\\iordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\servicecontracts\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\servicecontracts\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|e:\\ordermicroservice\\dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\dto\\orderadddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\orderadddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\mappers\\orderaddrequesttoordermappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\mappers\\orderaddrequesttoordermappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderaddrequesttoordermappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\mappers\\ordertoorderresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\ordertoorderresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\dto\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\mappers\\orderitemaddrequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderitemaddrequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\httpclients\\usersmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\httpclients\\usersmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|e:\\ordermicroservice\\ordersmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\validators\\orderaddrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\validators\\orderaddrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|e:\\ordermicroservice\\dataaccesslayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\dto\\orderadddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\orderadddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\dto\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\dto\\orderupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\orderupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|e:\\ordermicroservice\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|e:\\ordermicroservice\\businesslogiclayer\\validators\\orderaddrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\validators\\orderaddrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\mappers\\orderupdatemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderupdatemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\repositories\\ordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\ordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\dto\\orderitemupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\orderitemupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\mappers\\orderitemupdaterequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderitemupdaterequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\mappers\\orderitemtoorderitemresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderitemtoorderitemresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\repositorycontracts\\iordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositorycontracts\\iordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\servicecontracts\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\servicecontracts\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\mappers\\ordertoorderresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\ordertoorderresponsemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\mappers\\orderitemaddrequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\orderitemaddrequesttoorderitemmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,17 +118,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "OrdersController.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\OrdersMicroservice.API\\ApiControllers\\OrdersController.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\ApiControllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "OrdersMicroservice.API\\ApiControllers\\OrdersController.cs",
-              "ToolTip": "E:\\OrderMicroservice\\OrdersMicroservice.API\\ApiControllers\\OrdersController.cs",
+              "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\ApiControllers\\OrdersController.cs",
               "RelativeToolTip": "OrdersMicroservice.API\\ApiControllers\\OrdersController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAA6wHgAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAwH8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T00:08:27.808Z",
               "IsPinned": true,
@@ -120,45 +136,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "OrderItemUpdateRequest.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderItemUpdateRequest.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderItemUpdateRequest.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderItemUpdateRequest.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderItemUpdateRequest.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderItemUpdateRequest.cs",
               "RelativeToolTip": "BusinessLogicLayer\\DTO\\OrderItemUpdateRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T15:18:46.652Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "OrdersService.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\Services\\OrdersService.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Services\\OrdersService.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\OrdersService.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\Services\\OrdersService.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Services\\OrdersService.cs",
               "RelativeToolTip": "BusinessLogicLayer\\Services\\OrdersService.cs",
-              "ViewState": "AgIAAFwBAAAAAAAAAAAowGsBAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAF8BAAAAAAAAAAAAAGsBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T00:23:20.389Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "OrdersRepository.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\DataAccessLayer\\Repositories\\OrdersRepository.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Repositories\\OrdersRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\OrdersRepository.cs",
-              "ToolTip": "E:\\OrderMicroservice\\DataAccessLayer\\Repositories\\OrdersRepository.cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Repositories\\OrdersRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\Repositories\\OrdersRepository.cs",
               "ViewState": "AgIAAOcAAAAAAAAAAEBDwOMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T01:26:13.196Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -166,89 +179,203 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderUpdateMapper.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCEAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "OrderResponse.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderResponse.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderResponse.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderResponse.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\DTO\\OrderResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T16:20:45.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T02:17:29.296Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\DependencyInjection.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\DependencyInjection.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "OrderAddRequestToOrderMappingProfile.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAsAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T02:02:13.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T02:06:42.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\DataAccessLayer\\Entities\\OrderItem.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\OrderItem.cs",
-              "ToolTip": "E:\\OrderMicroservice\\DataAccessLayer\\Entities\\OrderItem.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entities\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UsersMicroserviceClient.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwCoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T00:24:28.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T17:45:46.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderUpdateRequest.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "OrderAddRequestValidator.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T02:17:32.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T00:23:32.243Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "OrderItemUpdateRequestToOrderItemMappingProfile.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABCAAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\appsettings.json",
+              "RelativeDocumentMoniker": "OrdersMicroservice.API\\appsettings.json",
+              "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\appsettings.json",
+              "RelativeToolTip": "OrdersMicroservice.API\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-19T00:09:10.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderAdddRequest.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T02:07:03.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T02:16:16.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Program.cs",
+              "RelativeDocumentMoniker": "OrdersMicroservice.API\\Program.cs",
+              "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Program.cs",
+              "RelativeToolTip": "OrdersMicroservice.API\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T17:49:18.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserInfo.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\UserInfo.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\UserInfo.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\UserInfo.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\DTO\\UserInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T17:32:05.634Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "OrderItemToOrderItemResponseMappingProfile.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAYAAAAAAAAAAAAAAA==",
+              "Title": "OrderUpdateRequest.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T02:12:14.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T02:17:32.827Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DependencyInjection.cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\DependencyInjection.cs",
+              "RelativeToolTip": "DataAccessLayer\\DependencyInjection.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAiwDAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T01:59:02.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Dockerfile",
+              "RelativeDocumentMoniker": "OrdersMicroservice.API\\Dockerfile",
+              "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Dockerfile",
+              "RelativeToolTip": "OrdersMicroservice.API\\Dockerfile",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwCIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-24T11:32:01.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderUpdateMapper.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T16:20:45.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\DependencyInjection.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DependencyInjection.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T02:02:13.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\OrderItem.cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T00:24:28.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T02:07:03.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderItemToOrderItemResponseMappingProfile.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T02:12:14.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "IOrdersRepository.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\DataAccessLayer\\RepositoryContracts\\IOrdersRepository.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\RepositoryContracts\\IOrdersRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\RepositoryContracts\\IOrdersRepository.cs",
-              "ToolTip": "E:\\OrderMicroservice\\DataAccessLayer\\RepositoryContracts\\IOrdersRepository.cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\RepositoryContracts\\IOrdersRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\RepositoryContracts\\IOrdersRepository.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAIA9wFgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -256,23 +383,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OrderResponse.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderResponse.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderResponse.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderResponse.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\DTO\\OrderResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T02:17:29.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "Order.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\DataAccessLayer\\Entities\\Order.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Order.cs",
-              "ToolTip": "E:\\OrderMicroservice\\DataAccessLayer\\Entities\\Order.cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\Order.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\Order.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAA+wBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -280,11 +395,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -292,11 +407,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "IOrdersService.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\ServiceContracts\\IOrdersService.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\ServiceContracts\\IOrdersService.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\ServiceContracts\\IOrdersService.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\ServiceContracts\\IOrdersService.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\ServiceContracts\\IOrdersService.cs",
               "RelativeToolTip": "BusinessLogicLayer\\ServiceContracts\\IOrdersService.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAMBHwBEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -304,35 +419,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "OrderAddRequestToOrderMappingProfile.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAIA+wA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T02:06:42.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OrderAdddRequest.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T02:16:16.828Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "OrderToOrderResponseMappingProfile.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
               "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -340,11 +431,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "OrderItemAddRequestToOrderItemMappingProfile.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
               "RelativeToolTip": "BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAIA+wA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -352,51 +443,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\DataAccessLayer\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DependencyInjection.cs",
-              "ToolTip": "E:\\OrderMicroservice\\DataAccessLayer\\DependencyInjection.cs",
-              "RelativeToolTip": "DataAccessLayer\\DependencyInjection.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAABIwDAAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T01:59:02.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\OrderMicroservice\\OrdersMicroservice.API\\appsettings.json",
-              "RelativeDocumentMoniker": "OrdersMicroservice.API\\appsettings.json",
-              "ToolTip": "E:\\OrderMicroservice\\OrdersMicroservice.API\\appsettings.json",
-              "RelativeToolTip": "OrdersMicroservice.API\\appsettings.json",
-              "ViewState": "AgIAAAEAAAAAAAAAAAA1wAkAAAB1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-19T00:09:10.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "DataAccessLayer.csproj",
-              "DocumentMoniker": "E:\\OrderMicroservice\\DataAccessLayer\\DataAccessLayer.csproj",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\DataAccessLayer.csproj",
               "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ToolTip": "E:\\OrderMicroservice\\DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\DataAccessLayer.csproj",
               "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-08-19T00:35:54.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "OrderAddRequestValidator.cs",
-              "DocumentMoniker": "E:\\OrderMicroservice\\BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
-              "ToolTip": "E:\\OrderMicroservice\\BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T00:23:32.243Z"
             }
           ]
         }
