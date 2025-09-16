@@ -266,42 +266,6 @@ public class OrdersService : IOrdersService
         return _mapper.Map<OrderResponse>(addedOrder);
     }
 
-    //public async Task<OrderResponse?> UpdateOrder(OrderUpdateRequest orderUpdateRequest)
-    //{
-    //    if (orderUpdateRequest == null) throw new ArgumentNullException(nameof(orderUpdateRequest));
-
-    //    ValidationResult validationResult = await _orderUpdateRequestValidator.ValidateAsync(orderUpdateRequest);
-    //    if (!validationResult.IsValid)
-    //    {
-    //        var errors = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));
-    //        throw new ArgumentException(errors);
-    //    }
-
-    //    foreach (var orderItemUpdateRequest in orderUpdateRequest.OrderItems)
-    //    {
-    //        var itemValidationResult = await _orderItemUpdateRequestValidator.ValidateAsync(orderItemUpdateRequest);
-    //        if (!itemValidationResult.IsValid)
-    //        {
-    //            var errors = string.Join(", ", itemValidationResult.Errors.Select(e => e.ErrorMessage));
-    //            throw new ArgumentException(errors);
-    //        }
-    //    }
-
-    //    // TODO: Check if UserID exists in Users microservice
-
-    //    var orderInput = _mapper.Map<Order>(orderUpdateRequest);
-
-    //    foreach (var orderItem in orderInput.OrderItems)
-    //    {
-    //        orderItem.TotalPrice = orderItem.Quantity * orderItem.UnitPrice;
-    //    }
-    //    orderInput.TotalBill = orderInput.OrderItems.Sum(i => i.TotalPrice);
-
-    //    var updatedOrder = await _ordersRepository.UpdateOrder(orderInput);
-    //    if (updatedOrder == null) return null;
-
-    //    return _mapper.Map<OrderResponse>(updatedOrder);
-    //}
 
     public async Task<OrderResponse?> UpdateOrder(OrderUpdateRequest orderUpdateRequest)
     {

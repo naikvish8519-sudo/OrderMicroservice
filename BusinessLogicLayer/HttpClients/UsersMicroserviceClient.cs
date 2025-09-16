@@ -25,7 +25,11 @@ namespace BusinessLogicLayer.HttpClients
         {
             try
             {
-                var response = await _httpClient.GetAsync($"{_baseUrl}/api/Auth/{userId}");
+                var url = $"{_baseUrl}/api/Auth/{userId}";
+                Console.WriteLine($"[OrdersService] Calling URL: {url}");
+
+                var response = await _httpClient.GetAsync(url);
+                //var response = await _httpClient.GetAsync($"{_baseUrl}/api/Auth/{userId}");
 
                 if (response.IsSuccessStatusCode)
                 {

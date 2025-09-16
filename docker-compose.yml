@@ -1,0 +1,62 @@
+services:
+  orders-microservice:
+    build:
+      context: H:\OrderMicroservice
+      dockerfile: OrdersMicroservice.API/Dockerfile
+    image: vishwasjce/orders-api:latest
+    environment:
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__SqlServer=Server=sqlserver,1433;Database=OrdersDatabase;User Id=dockeruser;Password=StrongPass123!;Encrypt=True;TrustServerCertificate=True;
+    ports:
+      - "7000:8080"
+    networks:
+      - my-internal-net
+    depends_on:
+      - sqlserver
+
+  products-microservice:
+    build:
+      context: H:\ProductMicroservice\ProductsMicroService.API
+      dockerfile: Dockerfile
+    image: vishwasjce/products-api:latest
+    environment:
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__SqlServer=Server=sqlserver,1433;Database=ProductsDatabase;User Id=dockeruser;Password=StrongPass123!;Encrypt=True;TrustServerCertificate=True;
+    ports:
+      - "6000:8080"
+    networks:
+      - my-internal-net
+    depends_on:
+      - sqlserver
+
+  users-microservice:
+    build:
+      context: H:\UsersMicroservice
+      dockerfile: eCommerce.API/Dockerfile
+    image: vishwasjce/users-api:latest
+    environment:
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__SqlServer=Server=sqlserver,1433;Database=UsersDatabase;User Id=dockeruser;Password=StrongPass123!;Encrypt=True;TrustServerCertificate=True;
+    ports:
+      - "5000:8080"
+    networks:
+      - my-internal-net
+    depends_on:
+      - sqlserver
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=StrongPass123!
+    ports:
+      - "1433:1433"
+    networks:
+      - my-internal-net
+
+networks:
+  my-internal-net:
+    external: true
