@@ -6,6 +6,7 @@ using MongoDB.Driver;
 using System.Linq.Expressions;
 using BusinessLogicLayer.HttpClients;
 
+
 namespace OrdersMicroservice.API.ApiControllers;
 
 [Route("api/[controller]")]
@@ -14,13 +15,15 @@ public class OrdersController : ControllerBase
 {
   private readonly IOrdersService _ordersService;
   private readonly UsersMicroserviceClient _usersClient;
+  private readonly ProductMicroserviceClient _productsClient;     
 
 
 
-    public OrdersController(IOrdersService ordersService, UsersMicroserviceClient usersClient)
+    public OrdersController(IOrdersService ordersService, UsersMicroserviceClient usersClient, ProductMicroserviceClient productClient)
   {
     _ordersService = ordersService;
-       _usersClient = usersClient;
+        _productsClient = productClient;
+    _usersClient = usersClient;
     }
 
 
@@ -116,6 +119,13 @@ public class OrdersController : ControllerBase
         if (user is null)
             return NotFound($"User {orderAddRequest.UserId} not found.");
 
+        foreach (var item in orderAddRequest.OrderItems)
+        {
+            var product = await _productsClient.GetProductByIdAsync(item.ProductID);
+            if (product is null)
+                return NotFound($"Product {item.ProductID} not found.");
+        }
+
         // (Optional) add more checks, e.g. is user active/verified if your DTO supports it
         // if (user.IsActive == false) return Forbid("User is not active.");
 
@@ -126,26 +136,8 @@ public class OrdersController : ControllerBase
 
         return Created($"api/Orders/search/orderid/{orderResponse.OrderID}", orderResponse);
     }
-    //  [HttpPost]
-    //public async Task<IActionResult> Post(OrderAddRequest orderAddRequest)
-    //{
-    //  if (orderAddRequest == null)
-    //  {
-    //    return BadRequest("Invalid order data");
-    //  }
-
-    //  OrderResponse? orderResponse = await _ordersService.AddOrder(orderAddRequest);
-
-    //  if (orderResponse == null) 
-    //  {
-    //    return Problem("Error in adding order");
-    //  }
-
-
-    //  return Created($"api/Orders/search/orderid/{orderResponse?.OrderID}", orderResponse);
-    //}
-
-
+    
+    
     //PUT api/Orders/{orderID}
     [HttpPut("{orderID}")]
   public async Task<IActionResult> Put(Guid orderID, OrderUpdateRequest orderUpdateRequest)
@@ -166,7 +158,15 @@ public class OrdersController : ControllerBase
       return BadRequest("OrderID in the URL doesn't match with the OrderID in the Request body");
     }
 
-    OrderResponse? orderResponse = await _ordersService.UpdateOrder(orderUpdateRequest);
+        foreach (var item in orderUpdateRequest.OrderItems)
+        {
+            var product = await _productsClient.GetProductByIdAsync(item.ProductID);
+            if (product is null)
+                return NotFound($"Product {item.ProductID} not found.");
+        }
+
+
+        OrderResponse? orderResponse = await _ordersService.UpdateOrder(orderUpdateRequest);
 
     if (orderResponse == null)
     {

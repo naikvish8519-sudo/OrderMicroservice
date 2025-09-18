@@ -68,6 +68,7 @@ using eCommerce.OrdersMicroservice.DataAccessLayer.RepositoryContracts;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add DAL (DbContext with SQL Server + retry logic)
@@ -85,9 +86,28 @@ builder.Services.AddSqlServer<ApplicationDbContext>(
 
 // Add BLL and other services
 builder.Services.AddBusinessLogicLayer(builder.Configuration);
-builder.Services.AddHttpClient<UsersMicroserviceClient>();
+builder.Services.AddHttpClient<UsersMicroserviceClient>((sp, client) =>
+{
+    var config = sp.GetRequiredService<IConfiguration>();
+    var baseUrl = config["Services:UsersMicroserviceBaseUrl"];
+    client.BaseAddress = new Uri(baseUrl);
+});
+
+builder.Services.AddHttpClient<ProductMicroserviceClient>((sp, client) =>
+{
+    var config = sp.GetRequiredService<IConfiguration>();
+    var baseUrl = config["Services:ProductMicroserviceBaseUrl"];
+    client.BaseAddress = new Uri(baseUrl);
+});
+
+
+
+
 builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 builder.Services.AddScoped<IOrdersService, OrdersService>();
+builder.Services.AddScoped<IPizzaOrdersService, PizzaOrdersService>();
+builder.Services.AddScoped<IPizzaOrderRepository, PizzaOrderRepository>();
+
 
 // Add Controllers
 builder.Services.AddControllers();
