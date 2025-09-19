@@ -146,7 +146,7 @@ app.UseExceptionHandlingMiddleware();
 
 app.UseRouting();
 
-// CORS
+// CORS//
 app.UseCors();
 
 // Auth
