@@ -3,28 +3,56 @@
   "WorkspaceRootPath": "H:\\OrderMicroservice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\apicontrollers\\pizzaorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\apicontrollers\\pizzaorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\context\\applicationdbcontextfactory .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontextfactory .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\services\\pizzaordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\pizzaordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\servicecontracts\\ipizzaordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\servicecontracts\\ipizzaordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\mappers\\pizzaordermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\mappers\\pizzaordermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\dto\\pizzaorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\pizzaorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\entities\\pizzaorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\pizzaorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\repositories\\pizzaorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\pizzaorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\entities\\pizzaorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\pizzaorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\apicontrollers\\pizzaorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\apicontrollers\\pizzaorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\servicecontracts\\ipizzaordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\servicecontracts\\ipizzaordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\pizzaorderupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\validators\\pizzaorderupdaterequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\validators\\pizzaorderupdaterequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,16 +95,8 @@
       "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\validators\\orderaddrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\dto\\orderadddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\orderadddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\dto\\pizzaorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dto\\pizzaorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\mappers\\orderupdatemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,20 +107,12 @@
       "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\validators\\orderupdaterequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|h:\\ordermicroservice\\businesslogiclayer\\servicecontracts\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E644F46B-6B2A-4F0A-B287-462A3EEB3BC4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\servicecontracts\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\repositorycontracts\\iordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositorycontracts\\iordersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72C8385-A0B2-46F9-85A8-74FC8E7DE2EF}|DataAccessLayer\\DataAccessLayer.csproj|h:\\ordermicroservice\\dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -125,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|h:\\ordermicroservice\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\ordersmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17451C37-A36D-4271-8646-D2DEB4B30EE6}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|h:\\ordermicroservice\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -204,25 +208,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 335,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "PizzaOrdersController.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\ApiControllers\\PizzaOrdersController.cs",
               "RelativeDocumentMoniker": "OrdersMicroservice.API\\ApiControllers\\PizzaOrdersController.cs",
               "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\ApiControllers\\PizzaOrdersController.cs",
               "RelativeToolTip": "OrdersMicroservice.API\\ApiControllers\\PizzaOrdersController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAqwBYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA6wB0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T03:22:53.021Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "OrderItemUpdateRequest.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderItemUpdateRequest.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderItemUpdateRequest.cs",
@@ -231,12 +234,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T15:18:46.652Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "OrdersService.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Services\\OrdersService.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\OrdersService.cs",
@@ -245,12 +247,11 @@
               "ViewState": "AgIAAJwAAAAAAAAAAAAAAMEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T00:23:20.389Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "OrdersRepository.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Repositories\\OrdersRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\OrdersRepository.cs",
@@ -259,99 +260,133 @@
               "ViewState": "AgIAAA8BAAAAAAAAAAAIwBsBAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T01:26:13.196Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContextFactory .cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContextFactory .cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContextFactory .cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContextFactory .cs",
+              "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContextFactory .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T17:55:13.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\appsettings.json",
+              "RelativeDocumentMoniker": "OrdersMicroservice.API\\appsettings.json",
+              "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\appsettings.json",
+              "RelativeToolTip": "OrdersMicroservice.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAACgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-19T00:09:10.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAywB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T00:36:03.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "OrdersMicroservice.API\\Properties\\launchSettings.json",
+              "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "OrdersMicroservice.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABEAAAAAAAAAAAA8wBkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-16T00:30:50.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataAccessLayer.csproj",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-19T00:35:54.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PizzaOrdersService.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Services\\PizzaOrdersService.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\PizzaOrdersService.cs",
               "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Services\\PizzaOrdersService.cs",
               "RelativeToolTip": "BusinessLogicLayer\\Services\\PizzaOrdersService.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAIwIQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAIBAwIMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T01:27:28.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PizzaOrderMapper.cs",
-              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\PizzaOrderMapper.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\PizzaOrderMapper.cs",
-              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\PizzaOrderMapper.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\PizzaOrderMapper.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAwwD4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T03:09:47.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "IPizzaOrdersService.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\ServiceContracts\\IPizzaOrdersService.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\ServiceContracts\\IPizzaOrdersService.cs",
               "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\ServiceContracts\\IPizzaOrdersService.cs",
               "RelativeToolTip": "BusinessLogicLayer\\ServiceContracts\\IPizzaOrdersService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAA1wAwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAA1wAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T01:28:16.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T01:28:16.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "PizzaOrderRepository.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Repositories\\PizzaOrderRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\PizzaOrderRepository.cs",
               "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Repositories\\PizzaOrderRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\Repositories\\PizzaOrderRepository.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAIwBUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAvwB0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T01:22:30.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T01:22:30.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PizzaOrder.cs",
-              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\PizzaOrder.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\PizzaOrder.cs",
-              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\PizzaOrder.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entities\\PizzaOrder.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAA9wCgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "PizzaOrderResponse.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\PizzaOrderResponse.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\PizzaOrderResponse.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\PizzaOrderResponse.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\DTO\\PizzaOrderResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T01:17:52.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T02:35:55.976Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\OrderItem.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\OrderItem.cs",
-              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\OrderItem.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entities\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Title": "PizzaOrderMapper.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\PizzaOrderMapper.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\PizzaOrderMapper.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\PizzaOrderMapper.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Mappers\\PizzaOrderMapper.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAA2wIQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T00:24:28.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PizzaOrderUpdateRequest.cs",
-              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\PizzaOrderUpdateRequest.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\PizzaOrderUpdateRequest.cs",
-              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\PizzaOrderUpdateRequest.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\DTO\\PizzaOrderUpdateRequest.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAywAcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T02:35:20.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T03:09:47.198Z"
             },
             {
               "$type": "Document",
@@ -361,14 +396,49 @@
               "RelativeDocumentMoniker": "OrdersMicroservice.API\\Program.cs",
               "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Program.cs",
               "RelativeToolTip": "OrdersMicroservice.API\\Program.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAUwIQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T17:49:18.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T17:49:18.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
+              "Title": "PizzaOrder.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\PizzaOrder.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\PizzaOrder.cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\PizzaOrder.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\PizzaOrder.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA/wBMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T01:17:52.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\OrderItem.cs",
+              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T00:24:28.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PizzaOrderUpdateRequest.cs",
+              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\PizzaOrderUpdateRequest.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\PizzaOrderUpdateRequest.cs",
+              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\PizzaOrderUpdateRequest.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\DTO\\PizzaOrderUpdateRequest.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAywAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T02:35:20.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "PizzaOrderAddRequest.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\PizzaOrderAddRequest.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\PizzaOrderAddRequest.cs",
@@ -380,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "PizzaOrderUpdateRequestValidator.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Validators\\PizzaOrderUpdateRequestValidator.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\PizzaOrderUpdateRequestValidator.cs",
@@ -392,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "OrderItemAddRequestValidator.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Validators\\OrderItemAddRequestValidator.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\OrderItemAddRequestValidator.cs",
@@ -404,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "PizzaOrderAddRequestValidator.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Validators\\PizzaOrderAddRequestValidator.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\PizzaOrderAddRequestValidator.cs",
@@ -416,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "OrderAdddRequest.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderAdddRequest.cs",
@@ -428,31 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "OrdersMicroservice.API\\Properties\\launchSettings.json",
-              "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "OrdersMicroservice.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAACAAAAAAAAAAAAA8wCwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-16T00:30:50.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PizzaOrderResponse.cs",
-              "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\PizzaOrderResponse.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\PizzaOrderResponse.cs",
-              "ToolTip": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\PizzaOrderResponse.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\DTO\\PizzaOrderResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T02:35:55.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "OrderAddRequestValidator.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\OrderAddRequestValidator.cs",
@@ -464,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "OrderUpdateMapper.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderUpdateMapper.cs",
@@ -476,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "OrderUpdateRequestValidator.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Validators\\OrderUpdateRequestValidator.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Validators\\OrderUpdateRequestValidator.cs",
@@ -488,19 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
-              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
-              "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAywBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T00:36:03.621Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "IOrdersService.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\ServiceContracts\\IOrdersService.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\ServiceContracts\\IOrdersService.cs",
@@ -512,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "IOrdersRepository.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\RepositoryContracts\\IOrdersRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\RepositoryContracts\\IOrdersRepository.cs",
@@ -524,19 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "DataAccessLayer.csproj",
-              "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ToolTip": "H:\\OrderMicroservice\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-19T00:35:54.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Order.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Order.cs",
@@ -548,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ProductMicroserviceClient.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\HttpClients\\ProductMicroserviceClient.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\HttpClients\\ProductMicroserviceClient.cs",
@@ -560,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "UsersMicroserviceClient.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
@@ -572,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "H:\\OrderMicroservice\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -584,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "docker-compose.dcproj",
               "DocumentMoniker": "H:\\OrderMicroservice\\docker-compose.dcproj",
               "RelativeDocumentMoniker": "docker-compose.dcproj",
@@ -596,19 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\appsettings.json",
-              "RelativeDocumentMoniker": "OrdersMicroservice.API\\appsettings.json",
-              "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\appsettings.json",
-              "RelativeToolTip": "OrdersMicroservice.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-19T00:09:10.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "OrderUpdateRequest.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderUpdateRequest.cs",
@@ -620,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ProductInfo.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\ProductInfo.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\ProductInfo.cs",
@@ -632,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": ".dockerignore",
               "DocumentMoniker": "H:\\OrderMicroservice\\.dockerignore",
               "RelativeDocumentMoniker": ".dockerignore",
@@ -644,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "UserInfo.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\UserInfo.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\UserInfo.cs",
@@ -656,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "OrderItemAddRequest.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderItemAddRequest.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderItemAddRequest.cs",
@@ -668,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Dockerfile",
               "DocumentMoniker": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Dockerfile",
               "RelativeDocumentMoniker": "OrdersMicroservice.API\\Dockerfile",
@@ -680,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "docker-compose.override.yml",
               "DocumentMoniker": "H:\\OrderMicroservice\\docker-compose.override.yml",
               "RelativeDocumentMoniker": "docker-compose.override.yml",
@@ -692,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "OrderResponse.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DTO\\OrderResponse.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTO\\OrderResponse.cs",
@@ -704,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DependencyInjection.cs",
@@ -716,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "H:\\UsersMicroservice\\eCommerce.Core\\Entities\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "..\\UsersMicroservice\\eCommerce.Core\\Entities\\ApplicationUser.cs",
@@ -728,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
@@ -738,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "OrderAddRequestToOrderMappingProfile.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderAddRequestToOrderMappingProfile.cs",
@@ -750,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\DataAccessLayer\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\DependencyInjection.cs",
@@ -762,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "OrderItemUpdateRequestToOrderItemMappingProfile.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemUpdateRequestToOrderItemMappingProfile.cs",
@@ -774,7 +784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "OrderItemToOrderItemResponseMappingProfile.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemToOrderItemResponseMappingProfile.cs",
@@ -786,7 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "OrderToOrderResponseMappingProfile.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderToOrderResponseMappingProfile.cs",
@@ -798,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "OrderItemAddRequestToOrderItemMappingProfile.cs",
               "DocumentMoniker": "H:\\OrderMicroservice\\BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Mappers\\OrderItemAddRequestToOrderItemMappingProfile.cs",

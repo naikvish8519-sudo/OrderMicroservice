@@ -127,7 +127,9 @@ builder.Services.AddCors(options =>
         policy.WithOrigins(
             "http://localhost:4200",   // Angular
             "http://localhost:6000",   // Swagger in Docker
-            "http://127.0.0.1:6000") // Angular frontend
+            "http://127.0.0.1:6000",
+            "http://localhost:3000"
+            ) // Angular frontend
               .AllowAnyMethod()
               .AllowAnyHeader();
     });

@@ -111,8 +111,9 @@ public class PizzaOrdersService : IPizzaOrdersService
     public async Task<PizzaOrderResponse?> GetOrderById(Guid orderId)
     {
         var order = await _pizzaOrdersRepository.GetOrderByIdAsync(orderId);
-        return order == null ? null : _mapper.Map<PizzaOrderResponse>(order);
+        return order == null ? null : PizzaOrderMapper.MapToPizzaOrderResponse(order);
     }
+
 
     //public async Task<List<PizzaOrderResponse>> GetOrders()
     //{
@@ -141,12 +142,14 @@ public class PizzaOrdersService : IPizzaOrdersService
     public async Task<PizzaOrderResponse?> GetOrderByCondition(Expression<Func<PizzaOrder, bool>> predicate)
     {
         var order = await _pizzaOrdersRepository.GetPizzaOrderByCondition(predicate);
-        return order == null ? null : _mapper.Map<PizzaOrderResponse>(order);
+        return order == null ? null : PizzaOrderMapper.MapToPizzaOrderResponse(order);
     }
+
 
     public async Task<List<PizzaOrderResponse>> GetOrdersByCondition(Expression<Func<PizzaOrder, bool>> predicate)
     {
         var orders = await _pizzaOrdersRepository.GetPizzaOrdersByCondition(predicate);
-        return _mapper.Map<List<PizzaOrderResponse>>(orders);
+        //return _mapper.Map<List<PizzaOrderResponse>>(orders);
+        return PizzaOrderMapper.MapToPizzaOrderResponseList(orders);
     }
 }

@@ -17,8 +17,9 @@ namespace eCommerce.OrdersMicroservice.DataAccessLayer.Entities
         public string PizzaSize { get; set; } = string.Empty; // Size: Small, Medium, etc.
 
         [MaxLength(500)]
-        public List<string> Toppings { get; set; } = new();
-        
+        public string Toppings { get; set; } = string.Empty; // stored as comma-separated string
+
+
 
         [Required]
         [Column(TypeName = "decimal(10,2)")]

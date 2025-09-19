@@ -18,11 +18,18 @@ namespace OrdersMicroservice.API.ApiControllers
         }
 
         // GET: api/PizzaOrders
+        //[HttpGet]
+        //public async Task<IEnumerable<PizzaOrderResponse?>> Get()
+        //{
+        //    var orders = await _pizzaOrdersService.GetOrders();
+        //    return Ok(orders);
+        //}
         [HttpGet]
-        public async Task<IEnumerable<PizzaOrderResponse?>> Get()
+        [Produces("application/json")] // 👈 force JSON
+        public async Task<IActionResult> Get()
         {
             var orders = await _pizzaOrdersService.GetOrders();
-            return orders;
+            return Ok(orders); // forces JSON serialization
         }
 
         // GET: api/PizzaOrders/search/orderid/{orderId}
@@ -39,12 +46,29 @@ namespace OrdersMicroservice.API.ApiControllers
         }
 
         // GET: api/PizzaOrders/search/userid/{userId}
+        //[HttpGet("search/userid/{userId}")]
+        //public async Task<IEnumerable<PizzaOrderResponse?>> GetByUserId(Guid userId)
+        //{
+        //    Expression<Func<PizzaOrder, bool>> predicate = o => o.UserID == userId;
+        //    return await _pizzaOrdersService.GetOrdersByCondition(predicate);
+        //}
+
         [HttpGet("search/userid/{userId}")]
-        public async Task<IEnumerable<PizzaOrderResponse?>> GetByUserId(Guid userId)
+        [Produces("application/json")] // ✅ Force JSON
+        public async Task<IActionResult> GetByUserId(Guid userId)
         {
             Expression<Func<PizzaOrder, bool>> predicate = o => o.UserID == userId;
-            return await _pizzaOrdersService.GetOrdersByCondition(predicate);
+
+            var orders = await _pizzaOrdersService.GetOrdersByCondition(predicate);
+
+            if (orders == null || !orders.Any())
+            {
+                return NotFound(new { message = $"No orders found for user {userId}" });
+            }
+
+            return Ok(orders); // ✅ Always returns JSON
         }
+
 
         [HttpGet("search/orderDate/{orderDate}")]
         public async Task<IEnumerable<PizzaOrderResponse?>> GetByOrderDate(DateTime orderDate)
