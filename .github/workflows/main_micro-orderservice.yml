@@ -13,23 +13,26 @@ jobs:
   build:
     runs-on: windows-latest
     permissions:
-      contents: read #This is required for actions/checkout
+      contents: read # required for actions/checkout
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up .NET Core
+      - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.x'
 
+      - name: Restore dependencies
+        run: dotnet restore ./OrdersMicroservice.API/OrdersMicroservice.API.csproj
+
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build ./OrdersMicroservice.API/OrdersMicroservice.API.csproj --configuration Release --no-restore
 
-      - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+      - name: Publish app
+        run: dotnet publish ./OrdersMicroservice.API/OrdersMicroservice.API.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp" --no-build
 
-      - name: Upload artifact for deployment job
+      - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
@@ -39,8 +42,8 @@ jobs:
     runs-on: windows-latest
     needs: build
     permissions:
-      id-token: write #This is required for requesting the JWT
-      contents: read #This is required for actions/checkout
+      id-token: write   # required for requesting JWT
+      contents: read    # required for actions/checkout
 
     steps:
       - name: Download artifact from build job
@@ -51,9 +54,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7A14E72EC2654C0F91DAA86F60D64C80 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D808C5C4FCDA4643883EBE03A2D9C8CB }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7E2C271BE3B14CD1AD57216FE420D758 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_16D5CD571AC74CAF8FEBD96209FEF43F }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9C47BC3E4E9C4C1B8F886607569BBA01 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D50929162AF9469A8AFB482F10539744 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -62,4 +65,3 @@ jobs:
           app-name: 'Micro-OrderService'
           slot-name: 'Production'
           package: .
-          
