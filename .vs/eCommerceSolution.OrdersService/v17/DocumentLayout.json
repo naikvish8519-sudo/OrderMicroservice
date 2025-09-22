@@ -270,7 +270,7 @@
               "RelativeDocumentMoniker": "OrdersMicroservice.API\\Program.cs",
               "ToolTip": "H:\\OrderMicroservice\\OrdersMicroservice.API\\Program.cs",
               "RelativeToolTip": "OrdersMicroservice.API\\Program.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAUwI8AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAUwIMAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T17:49:18.618Z",
               "EditorCaption": ""
@@ -285,8 +285,7 @@
               "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContextFactory .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T17:55:13.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T17:55:13.264Z"
             },
             {
               "$type": "Document",
@@ -298,8 +297,7 @@
               "RelativeToolTip": "OrdersMicroservice.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-19T00:09:10.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T00:09:10.792Z"
             },
             {
               "$type": "Document",
@@ -311,8 +309,7 @@
               "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAywB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T00:36:03.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T00:36:03.621Z"
             },
             {
               "$type": "Document",
@@ -324,8 +321,7 @@
               "RelativeToolTip": "OrdersMicroservice.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAABEAAAAAAAAAAAA8wBkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-16T00:30:50.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-16T00:30:50.981Z"
             },
             {
               "$type": "Document",
@@ -337,8 +333,7 @@
               "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-19T00:35:54.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T00:35:54.695Z"
             },
             {
               "$type": "Document",
@@ -350,8 +345,7 @@
               "RelativeToolTip": "BusinessLogicLayer\\Services\\PizzaOrdersService.cs",
               "ViewState": "AgIAAGMAAAAAAAAAAIBAwIMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T01:27:28.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T01:27:28.758Z"
             },
             {
               "$type": "Document",
@@ -615,8 +609,7 @@
               "RelativeToolTip": "docker-compose.dcproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-16T02:49:41.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-16T02:49:41.646Z"
             },
             {
               "$type": "Document",

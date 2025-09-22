@@ -128,7 +128,8 @@ builder.Services.AddCors(options =>
             "http://localhost:4200",   // Angular
             "http://localhost:6000",   // Swagger in Docker
             "http://127.0.0.1:6000",
-            "http://localhost:3000"
+            "http://localhost:3000",
+            "https://react-pizza-gsdtecavejezewfr.canadacentral-01.azurewebsites.net/"
             ) // Angular frontend
               .AllowAnyMethod()
               .AllowAnyHeader();
