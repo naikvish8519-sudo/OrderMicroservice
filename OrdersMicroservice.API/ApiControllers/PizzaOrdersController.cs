@@ -18,114 +18,144 @@ namespace OrdersMicroservice.API.ApiControllers
         }
 
         // GET: api/PizzaOrders
-        //[HttpGet]
-        //public async Task<IEnumerable<PizzaOrderResponse?>> Get()
-        //{
-        //    var orders = await _pizzaOrdersService.GetOrders();
-        //    return Ok(orders);
-        //}
         [HttpGet]
-        [Produces("application/json")] // 👈 force JSON
+        [Produces("application/json")]
         public async Task<IActionResult> Get()
         {
-            var orders = await _pizzaOrdersService.GetOrders();
-            return Ok(orders); // forces JSON serialization
+            try
+            {
+                var orders = await _pizzaOrdersService.GetOrders();
+                return Ok(orders);
+            }
+            catch (Exception ex)
+            {
+                return Problem($"Error fetching pizza orders: {ex.Message}");
+            }
         }
 
         // GET: api/PizzaOrders/search/orderid/{orderId}
         [HttpGet("search/orderid/{orderId}")]
-        public async Task<ActionResult<PizzaOrderResponse?>> GetByOrderId(Guid orderId)
+        public async Task<IActionResult> GetByOrderId(Guid orderId)
         {
-            Expression<Func<PizzaOrder, bool>> predicate = o => o.OrderID == orderId;
-            var result = await _pizzaOrdersService.GetOrderByCondition(predicate);
+            try
+            {
+                Expression<Func<PizzaOrder, bool>> predicate = o => o.OrderID == orderId;
+                var result = await _pizzaOrdersService.GetOrderByCondition(predicate);
 
-            if (result == null)
-                return NotFound($"Order with ID {orderId} not found.");
+                if (result == null)
+                    return NotFound($"Order with ID {orderId} not found.");
 
-            return Ok(result);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Problem($"Error fetching order by ID: {ex.Message}");
+            }
         }
 
         // GET: api/PizzaOrders/search/userid/{userId}
-        //[HttpGet("search/userid/{userId}")]
-        //public async Task<IEnumerable<PizzaOrderResponse?>> GetByUserId(Guid userId)
-        //{
-        //    Expression<Func<PizzaOrder, bool>> predicate = o => o.UserID == userId;
-        //    return await _pizzaOrdersService.GetOrdersByCondition(predicate);
-        //}
-
         [HttpGet("search/userid/{userId}")]
-        [Produces("application/json")] // ✅ Force JSON
+        [Produces("application/json")]
         public async Task<IActionResult> GetByUserId(Guid userId)
         {
-            Expression<Func<PizzaOrder, bool>> predicate = o => o.UserID == userId;
-
-            var orders = await _pizzaOrdersService.GetOrdersByCondition(predicate);
-
-            if (orders == null || !orders.Any())
+            try
             {
-                return NotFound(new { message = $"No orders found for user {userId}" });
+                Expression<Func<PizzaOrder, bool>> predicate = o => o.UserID == userId;
+                var orders = await _pizzaOrdersService.GetOrdersByCondition(predicate);
+
+                if (orders == null || !orders.Any())
+                    return NotFound(new { message = $"No orders found for user {userId}" });
+
+                return Ok(orders);
             }
-
-            return Ok(orders); // ✅ Always returns JSON
+            catch (Exception ex)
+            {
+                return Problem($"Error fetching orders by user ID: {ex.Message}");
+            }
         }
 
-
+        // GET: api/PizzaOrders/search/orderDate/{orderDate}
         [HttpGet("search/orderDate/{orderDate}")]
-        public async Task<IEnumerable<PizzaOrderResponse?>> GetByOrderDate(DateTime orderDate)
+        public async Task<IActionResult> GetByOrderDate(DateTime orderDate)
         {
-            // Safely compare nullable DateTime (if applicable)
-            Expression<Func<PizzaOrder, bool>> predicate = o =>
-                o.OrderDate.HasValue && o.OrderDate.Value.Date == orderDate.Date;
+            try
+            {
+                Expression<Func<PizzaOrder, bool>> predicate = o =>
+                    o.OrderDate.HasValue && o.OrderDate.Value.Date == orderDate.Date;
 
-            var orders = await _pizzaOrdersService.GetOrdersByCondition(predicate);
-
-            return orders;
+                var orders = await _pizzaOrdersService.GetOrdersByCondition(predicate);
+                return Ok(orders);
+            }
+            catch (Exception ex)
+            {
+                return Problem($"Error fetching orders by date: {ex.Message}");
+            }
         }
-
 
         // POST: api/PizzaOrders
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] PizzaOrderAddRequest request)
         {
-            if (request == null)
-                return BadRequest("Request cannot be null.");
+            try
+            {
+                if (request == null)
+                    return BadRequest("Request cannot be null.");
 
-            var result = await _pizzaOrdersService.AddPizzaOrder(request);
-            if (result == null)
-                return Problem("Failed to create pizza order.");
+                var result = await _pizzaOrdersService.AddPizzaOrder(request);
+                if (result == null)
+                    return Problem("Failed to create pizza order.");
 
-            return CreatedAtAction(nameof(GetByOrderId), new { orderId = result.OrderID }, result);
+                return CreatedAtAction(nameof(GetByOrderId), new { orderId = result.OrderID }, result);
+            }
+            catch (Exception ex)
+            {
+                return Problem($"Error creating pizza order: {ex.Message}");
+            }
         }
 
         // PUT: api/PizzaOrders/{orderId}
         [HttpPut("{orderId}")]
         public async Task<IActionResult> Put(Guid orderId, [FromBody] PizzaOrderUpdateRequest request)
         {
-            if (request == null)
-                return BadRequest("Request cannot be null.");
+            try
+            {
+                if (request == null)
+                    return BadRequest("Request cannot be null.");
 
-            if (orderId != request.OrderID)
-                return BadRequest("OrderID mismatch between URL and request body.");
+                if (orderId != request.OrderID)
+                    return BadRequest("OrderID mismatch between URL and request body.");
 
-            var updated = await _pizzaOrdersService.UpdatePizzaOrder(request);
-            if (updated == null)
-                return Problem("Failed to update pizza order.");
+                var updated = await _pizzaOrdersService.UpdatePizzaOrder(request);
+                if (updated == null)
+                    return Problem("Failed to update pizza order.");
 
-            return Ok(updated);
+                return Ok(updated);
+            }
+            catch (Exception ex)
+            {
+                return Problem($"Error updating pizza order: {ex.Message}");
+            }
         }
 
         // DELETE: api/PizzaOrders/{orderId}
         [HttpDelete("{orderId}")]
         public async Task<IActionResult> Delete(Guid orderId)
         {
-            if (orderId == Guid.Empty)
-                return BadRequest("Invalid Order ID.");
+            try
+            {
+                if (orderId == Guid.Empty)
+                    return BadRequest("Invalid Order ID.");
 
-            bool deleted = await _pizzaOrdersService.DeletePizzaOrder(orderId);
-            if (!deleted)
-                return Problem("Failed to delete pizza order.");
+                bool deleted = await _pizzaOrdersService.DeletePizzaOrder(orderId);
+                if (!deleted)
+                    return Problem("Failed to delete pizza order.");
 
-            return Ok(deleted);
+                return Ok(deleted);
+            }
+            catch (Exception ex)
+            {
+                return Problem($"Error deleting pizza order: {ex.Message}");
+            }
         }
     }
 }

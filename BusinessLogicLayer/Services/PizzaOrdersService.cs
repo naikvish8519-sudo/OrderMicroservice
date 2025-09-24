@@ -29,23 +29,6 @@ public class PizzaOrdersService : IPizzaOrdersService
         _pizzaOrderUpdateValidator = pizzaOrderUpdateValidator;
     }
 
-    //public async Task<PizzaOrderResponse?> AddPizzaOrder(PizzaOrderAddRequest pizzaOrderAddRequest)
-    //{
-    //    if (pizzaOrderAddRequest == null) throw new ArgumentNullException(nameof(pizzaOrderAddRequest));
-
-    //    ValidationResult validation = await _pizzaOrderAddValidator.ValidateAsync(pizzaOrderAddRequest);
-    //    if (!validation.IsValid)
-    //    {
-    //        throw new ArgumentException(string.Join(", ", validation.Errors.Select(e => e.ErrorMessage)));
-    //    }
-
-    //    var orderEntity = _mapper.Map<PizzaOrder>(pizzaOrderAddRequest);
-    //    orderEntity.OrderID = Guid.NewGuid();
-    //    orderEntity.OrderDate = DateTime.UtcNow;
-
-    //    var added = await _pizzaOrdersRepository.AddOrderAsync(orderEntity);
-    //    return _mapper.Map<PizzaOrderResponse>(added);
-    //}
     public async Task<PizzaOrderResponse?> AddPizzaOrder(PizzaOrderAddRequest pizzaOrderAddRequest)
     {
         if (pizzaOrderAddRequest == null)
@@ -58,50 +41,27 @@ public class PizzaOrdersService : IPizzaOrdersService
         }
 
         var orderEntity = PizzaOrderMapper.MapToPizzaOrder(pizzaOrderAddRequest);
-
         var added = await _pizzaOrdersRepository.AddOrderAsync(orderEntity);
+
         return added != null ? PizzaOrderMapper.MapToPizzaOrderResponse(added) : null;
     }
-
-
-    //public async Task<PizzaOrderResponse?> UpdatePizzaOrder(PizzaOrderUpdateRequest pizzaOrderUpdateRequest)
-    //{
-    //    if (pizzaOrderUpdateRequest == null) throw new ArgumentNullException(nameof(pizzaOrderUpdateRequest));
-
-    //    ValidationResult validation = await _pizzaOrderUpdateValidator.ValidateAsync(pizzaOrderUpdateRequest);
-    //    if (!validation.IsValid)
-    //    {
-    //        throw new ArgumentException(string.Join(", ", validation.Errors.Select(e => e.ErrorMessage)));
-    //    }
-
-    //    var orderEntity = _mapper.Map<PizzaOrder>(pizzaOrderUpdateRequest);
-
-    //    var updated = await _pizzaOrdersRepository.UpdateOrderAsync(orderEntity);
-    //    return updated == null ? null : _mapper.Map<PizzaOrderResponse>(updated);
-    //}
 
     public async Task<PizzaOrderResponse?> UpdatePizzaOrder(PizzaOrderUpdateRequest pizzaOrderUpdateRequest)
     {
         if (pizzaOrderUpdateRequest == null)
             throw new ArgumentNullException(nameof(pizzaOrderUpdateRequest));
 
-        // ✅ Run validation
         ValidationResult validation = await _pizzaOrderUpdateValidator.ValidateAsync(pizzaOrderUpdateRequest);
         if (!validation.IsValid)
         {
             throw new ArgumentException(string.Join(", ", validation.Errors.Select(e => e.ErrorMessage)));
         }
 
-        // ✅ Use your custom mapper instead of AutoMapper
         var orderEntity = PizzaOrderMapper.MapToPizzaOrder(pizzaOrderUpdateRequest);
-
-        // ✅ Call repository update
         var updated = await _pizzaOrdersRepository.UpdateOrderAsync(orderEntity);
 
-        // ✅ Convert back to response DTO
         return updated == null ? null : PizzaOrderMapper.MapToPizzaOrderResponse(updated);
     }
-
 
     public async Task<bool> DeletePizzaOrder(Guid pizzaOrderID)
     {
@@ -114,24 +74,11 @@ public class PizzaOrdersService : IPizzaOrdersService
         return order == null ? null : PizzaOrderMapper.MapToPizzaOrderResponse(order);
     }
 
-
-    //public async Task<List<PizzaOrderResponse>> GetOrders()
-    //{
-    //    var orders = await _pizzaOrdersRepository.GetAllOrdersAsync();
-    //    return _mapper.Map<List<PizzaOrderResponse>>(orders);
-    //}
-
     public async Task<List<PizzaOrderResponse>> GetOrders()
     {
         var orders = await _pizzaOrdersRepository.GetAllOrdersAsync();
-
-        // ❌ Wrong (AutoMapper, causes mapping error)
-        // return _mapper.Map<List<PizzaOrderResponse>>(orders);
-
-        // ✅ Correct (your static mapper)
         return PizzaOrderMapper.MapToPizzaOrderResponseList(orders);
     }
-
 
     public async Task<List<PizzaOrderResponse>> GetOrdersByUser(Guid userId, bool onlyOrdered = true)
     {
@@ -145,11 +92,9 @@ public class PizzaOrdersService : IPizzaOrdersService
         return order == null ? null : PizzaOrderMapper.MapToPizzaOrderResponse(order);
     }
 
-
     public async Task<List<PizzaOrderResponse>> GetOrdersByCondition(Expression<Func<PizzaOrder, bool>> predicate)
     {
         var orders = await _pizzaOrdersRepository.GetPizzaOrdersByCondition(predicate);
-        //return _mapper.Map<List<PizzaOrderResponse>>(orders);
         return PizzaOrderMapper.MapToPizzaOrderResponseList(orders);
     }
 }

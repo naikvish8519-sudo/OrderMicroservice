@@ -53,7 +53,7 @@ public static class DependencyInjection
             options.UseSqlServer(connectionString));
 
         // Register your repository
-        services.AddScoped<IOrdersRepository, OrdersRepository>();
+        //services.AddScoped<IOrdersRepository, OrdersRepository>();
 
         return services;
     }
